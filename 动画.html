@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画</title>
+<style>
+ body{margin:0px; padding:0px;}
+ #div1{background:#0f0;border:3px solid #f00;
+ 	  width:200px; height:200px;position:absolute;left:10px;}
+ #bt1{position:absolute;top:220px;}
+</style>
+<script type="text/javascript">
+	 window.onload=function(){
+	 	var div1=document.getElementById("div1")
+        var bt1=document.getElementById("bt1")
+            bt1.onclick=function(){
+           setInterval(function(){
+           	  div1.style.left=div1.offsetLeft+10+"px"
+           },100)
+             }
+        
+            }
+
+
+</script>
+</head>
+<body>
+<div id="div1"></div>
+<input type="button" id="bt1" value="按钮">	
+</body>
+</html>

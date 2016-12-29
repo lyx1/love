@@ -1,0 +1,32 @@
+1.引入文件
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+
+2、HTML
+
+<div id="fullpage">
+    <div class="section">第一屏</div>
+    <div class="section">第二屏</div>
+    <div class="section">
+        <div class="slide">第三屏的第一屏</div>
+        <div class="slide">第三屏的第二屏</div>
+        <div class="slide">第三屏的第三屏</div>
+        <div class="slide">第三屏的第四屏</div>
+    </div>
+    <div class="section">第四屏</div>
+</div>
+3、JavaScript
+
+$(function(){
+ $('#fullpage').fullpage({
+ 'verticalCentered': false,
+ 'css3': true,
+ 'sectionsColor': ['#254875', '#00FF00', '#254587', '#695684'],
+ anchors: ['page1', 'page2', 'page3', 'page4'],
+ 'navigation': true,
+ 'navigationPosition': 'right',
+ 'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
+ })
+ })
